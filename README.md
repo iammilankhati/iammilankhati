@@ -25,3 +25,8 @@ A low-latency, high-performance LLM gateway and continuous evaluation proxy writ
 A horizontally scalable streaming data ingestion pipeline processing multi-modal documents into vector spaces.
 - Real-time stream processing using **Kafka** and **Apache Flink** for distributed embedding generation.
 - Implements multi-threaded text chunking algorithms and sliding token windows natively in Rust.
+
+### ⚙️ [agent-cluster-ops-chaos](https://github.com)
+Cloud-native infrastructure orchestration files and chaos engineering suites for resilient AI scaling.
+- Configures event-driven horizontal pod autoscaling rules based directly on active **Kafka queue lag metrics**.
+- Incorporates targeted traffic-control scripts to inject intentional network degradation and validate runtime model failovers.
