@@ -1,27 +1,27 @@
 # Milan Khati
-### Distributed Systems & Agentic AI Architect | Go • Rust • Python
+### Distributed Systems & Agentic AI Architect
 
 I build high-throughput, fault-tolerant distributed backends and autonomous multi-agent systems. My focus is on long-running durable workflows, event-driven state orchestration, and highly optimized vector data pipelines.
 
-- **Languages:** Python (AI/Data), Go & Rust (High-Performance Proxies, Tooling, Core Infra)
-- **Infrastructure:** Temporal, Kafka, Kubernetes, gRPC, Docker, OpenTelemetry
-- **Agentic & Vector:** LangGraph, CrewAI, Custom State Machines, Qdrant, Milvus
+- 🛠️ **Languages:** Python (AI/Data Logic), Go & Rust (High-Performance Proxies, Tooling, Core Infra)
+- ⚙️ **Infrastructure:** Temporal, Kafka, Kubernetes, gRPC, Docker, OpenTelemetry
+- 🤖 **Agentic & Vector:** LangGraph, Model Context Protocol (MCP), Custom State Machines, Qdrant, Redis
 
 ---
 
 ## Flagship Systems Architectural Focus
 
-### 1 agentic-mesh-orchestrator (Python)
-A durable, self-healing multi-agent orchestration runtime built for production. 
+### 🐍 [agentic-mesh-orchestrator](https://github.com)
+A durable, self-healing multi-agent orchestration runtime built for production.
 - Implements state-machine transitions using **Temporal** to survive node crashes mid-agent-loop.
-- Features execution sandboxing for untrusted code execution and tool-calling.
+- Features secure tool execution sandboxing alongside Model Context Protocol (MCP) tool integration.
 
-### 2 ai-gateway-proxy-evaluator (Go)
-A low-latency, high-performance LLM gateway and continuous evaluation proxy.
-- Built-in token streaming optimization, semantic caching via **Redis**, and distributed rate-limiting.
-- Real-time continuous evaluation (LLM-as-a-judge) streaming metrics over **gRPC**.
+### 🐹 [ai-gateway-proxy-evaluator](https://github.com)
+A low-latency, high-performance LLM gateway and continuous evaluation proxy written in Go.
+- Built-in token streaming optimization, semantic caching sharding via **Redis**, and distributed rate-limiting.
+- Streams real-time continuous evaluation performance metrics (LLM-as-a-judge) natively over **gRPC**.
 
-### 3 distributed-rag-ingestion-pipeline (Rust / Python)
-A horizontally scalable data ingestion pipeline processing multi-modal documents into vector spaces.
-- Real-time stream processing using **Kafka** for distributed embedding generation.
-- Custom hybrid-search routing optimized for **Qdrant** clusters.
+### 🦀 [distributed-rag-ingestion-pipeline](https://github.com)
+A horizontally scalable streaming data ingestion pipeline processing multi-modal documents into vector spaces.
+- Real-time stream processing using **Kafka** and **Apache Flink** for distributed embedding generation.
+- Implements multi-threaded text chunking algorithms and sliding token windows natively in Rust.
