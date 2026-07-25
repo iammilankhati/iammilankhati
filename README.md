@@ -1,11 +1,11 @@
 # Milan Khati
-### Distributed Systems & Agentic AI Engineer
+### Distributed Systems & Agentic AI Architect | Go • Rust • Python
 
 I build high-throughput, fault-tolerant distributed backends and autonomous multi-agent systems. My focus is on long-running durable workflows, event-driven state orchestration, and highly optimized vector data pipelines.
 
-- 🛠️ **Languages:** Python (AI/Data), Go & Rust (High-Performance Proxies, Tooling, Core Infra)
-- ⚙️ **Infrastructure:** Temporal, Kafka, Kubernetes, gRPC, Docker, OpenTelemetry
-- 🤖 **Agentic & Vector:** LangGraph, CrewAI, Custom State Machines, Qdrant, Milvus
+- **Languages:** Python (AI/Data), Go & Rust (High-Performance Proxies, Tooling, Core Infra)
+- **Infrastructure:** Temporal, Kafka, Kubernetes, gRPC, Docker, OpenTelemetry
+- **Agentic & Vector:** LangGraph, CrewAI, Custom State Machines, Qdrant, Milvus
 
 ---
 
