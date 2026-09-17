@@ -1,5 +1,6 @@
 # Milan Khati
-### Distributed Systems & Agentic AI Architect
+### Senior Backend and AI System Engineer
+
 I build high-throughput, fault-tolerant distributed backends and autonomous multi-agent systems. My focus is on long-running durable workflows, event-driven state orchestration, and highly optimized vector data pipelines.
 
 - **Languages:** Python (AI/Data Logic), Go & Rust (High-Performance Proxies, Tooling, Core Infra)
