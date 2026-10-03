@@ -10,7 +10,7 @@ around them. The projects below are products I built and run myself.
 
 ### OCRQueen: document extraction API
 
-[ocrqueen.com](https://ocrqueen.com) · Source: [iammilankhati/ocrqueen](https://github.com/iammilankhati/ocrqueen)
+[ocrqueen.com](https://ocrqueen.com) · App source is private, SDKs and API spec are public
 
 Turns PDFs, slides, and images into structured JSON and Markdown.
 
@@ -35,7 +35,7 @@ classes, exams, attendance, and AI study tools.
 
 ### Pipeero: forms, databases, and questions in plain language
 
-[pipeero.com](https://pipeero.com) · Source: [iammilankhati/pipeero](https://github.com/iammilankhati/pipeero)
+[pipeero.com](https://pipeero.com) · Source is private
 
 Teams collect data through forms and uploaded documents, connect their
 own MySQL, PostgreSQL, or MongoDB database, and ask questions about it in
