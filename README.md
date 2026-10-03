@@ -10,7 +10,7 @@ around them. The projects below are products I built and run myself.
 
 ### OCRQueen: document extraction API
 
-[ocrqueen.com](https://ocrqueen.com) · Source: [ocrqueen/ocrqueen](https://github.com/ocrqueen/ocrqueen)
+[ocrqueen.com](https://ocrqueen.com) · Source: [iammilankhati/ocrqueen](https://github.com/iammilankhati/ocrqueen)
 
 Turns PDFs, slides, and images into structured JSON and Markdown.
 
@@ -19,7 +19,7 @@ Turns PDFs, slides, and images into structured JSON and Markdown.
 - If one model provider fails on a page, the next one is tried, so one bad page does not fail the document.
 - Prepaid billing that stays correct when jobs run at the same time: funds are reserved first and settled on the real page count.
 - Signed webhooks with retries, and idempotency keys against duplicate work.
-- SDKs for [Python](https://github.com/ocrqueen/ocrqueen-python) ([PyPI](https://pypi.org/project/ocrqueen/)) and [Node](https://github.com/ocrqueen/ocrqueen-node) ([npm](https://www.npmjs.com/package/ocrqueen)), built from one [OpenAPI spec](https://github.com/ocrqueen/openapi).
+- SDKs for [Python](https://github.com/iammilankhati/ocrqueen-python) ([PyPI](https://pypi.org/project/ocrqueen/)) and [Node](https://github.com/iammilankhati/ocrqueen-node) ([npm](https://www.npmjs.com/package/ocrqueen)), built from one [OpenAPI spec](https://github.com/iammilankhati/ocrqueen-openapi).
 
 ### SikshyaLab: learning platform with live classes
 
