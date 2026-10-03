@@ -35,7 +35,7 @@ classes, exams, attendance, and AI study tools.
 
 ### Pipeero: forms, databases, and questions in plain language
 
-[pipeero.com](https://pipeero.com) · Source is private
+[pipeero.com](https://pipeero.com) · Source: [iammilankhati/pipeero](https://github.com/iammilankhati/pipeero)
 
 Teams collect data through forms and uploaded documents, connect their
 own MySQL, PostgreSQL, or MongoDB database, and ask questions about it in
