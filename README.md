@@ -1,32 +1,63 @@
 # Milan Khati
-### Senior Backend and AI System Engineer
 
-I build high-throughput, fault-tolerant distributed backends and autonomous multi-agent systems. My focus is on long-running durable workflows, event-driven state orchestration, and highly optimized vector data pipelines.
+Backend and AI engineer in Kathmandu, Nepal. Open to relocation.
 
-- **Languages:** Python (AI/Data Logic), Go & Rust (High-Performance Proxies, Tooling, Core Infra)
-- **Infrastructure:** Temporal, Kafka, Kubernetes, gRPC, Docker, OpenTelemetry
-- **Agentic & Vector:** LangGraph, Model Context Protocol (MCP), Custom State Machines, Qdrant, Redis
+I build backend services and the LLM features that sit on them: document
+extraction, RAG, and agent workflows, plus the queues, billing, and APIs
+around them. The projects below are products I built and run myself.
 
----
+## Projects
 
-## Flagship Systems Architectural Focus
+### OCRQueen: document extraction API
 
-###  [agentic-mesh-orchestrator](https://github.com/iammilankhati/agentic-mesh-orchestrator)
-A durable, self-healing multi-agent orchestration runtime built for production.
-- Implements state-machine transitions using **Temporal** to survive node crashes mid-agent-loop.
-- Features secure tool execution sandboxing alongside Model Context Protocol (MCP) tool integration.
+[ocrqueen.com](https://ocrqueen.com) · Source: [ocrqueen/ocrqueen](https://github.com/ocrqueen/ocrqueen)
 
-### [ai-gateway-proxy-evaluator](https://github.com/iammilankhati/ai-gateway-proxy-evaluator)
-A low-latency, high-performance LLM gateway and continuous evaluation proxy written in Go.
-- Built-in token streaming optimization, semantic caching sharding via **Redis**, and distributed rate-limiting.
-- Streams real-time continuous evaluation performance metrics (LLM-as-a-judge) natively over **gRPC**.
+Turns PDFs, slides, and images into structured JSON and Markdown.
 
-### [distributed-rag-ingestion-pipeline](https://github.com/iammilankhati/distributed-rag-ingestion-pipeline)
-A horizontally scalable streaming data ingestion pipeline processing multi-modal documents into vector spaces.
-- Real-time stream processing using **Kafka** and **Apache Flink** for distributed embedding generation.
-- Implements multi-threaded text chunking algorithms and sliding token windows natively in Rust.
+- Async FastAPI API with arq workers.
+- Docling reads the page layout, then an LLM extracts each page into a Pydantic schema.
+- If one model provider fails on a page, the next one is tried, so one bad page does not fail the document.
+- Prepaid billing that stays correct when jobs run at the same time: funds are reserved first and settled on the real page count.
+- Signed webhooks with retries, and idempotency keys against duplicate work.
+- SDKs for [Python](https://github.com/ocrqueen/ocrqueen-python) ([PyPI](https://pypi.org/project/ocrqueen/)) and [Node](https://github.com/ocrqueen/ocrqueen-node) ([npm](https://www.npmjs.com/package/ocrqueen)), built from one [OpenAPI spec](https://github.com/ocrqueen/openapi).
 
-### [agent-cluster-ops-chaos](https://github.com/iammilankhati/agent-cluster-ops-chaos)
-Cloud-native infrastructure orchestration files and chaos engineering suites for resilient AI scaling.
-- Configures event-driven horizontal pod autoscaling rules based directly on active **Kafka queue lag metrics**.
-- Incorporates targeted traffic-control scripts to inject intentional network degradation and validate runtime model failovers.
+### SikshyaLab: learning platform with live classes
+
+[sikshyalab.com](https://sikshyalab.com) · Source is private
+
+A multi-tenant platform for schools and tuition centres: courses, live
+classes, exams, attendance, and AI study tools.
+
+- NestJS API, a FastAPI and LangGraph service for the AI features, and a Next.js app, on PostgreSQL.
+- Turns a teacher's own material into quizzes, exams, flashcards, and notes, and answers student questions from the same content.
+- Live classes run on self-hosted LiveKit. I measured CPU use per student and per recording on real classes, and sized the servers from those numbers.
+- Each school's limit on classes running at once is enforced with PostgreSQL locks.
+
+### Pipeero: forms, databases, and questions in plain language
+
+[pipeero.com](https://pipeero.com) · Source is private
+
+Teams collect data through forms and uploaded documents, connect their
+own MySQL, PostgreSQL, or MongoDB database, and ask questions about it in
+a chat.
+
+- Questions about totals are answered by SQL over the full data. The model decides what to compute and explains the result. It does not do the arithmetic.
+- Search over submissions and documents with pgvector.
+- Signed outgoing webhooks, queued on BullMQ with retries.
+
+### AI support-agent platform (in progress)
+
+[ai-support-agent-platform](https://github.com/iammilankhati/ai-support-agent-platform)
+
+Agents that resolve support tickets by calling tools, on Kafka, Redis,
+and PostgreSQL. Requirements and design are written. The build is in
+progress.
+
+## What I work with most
+
+Python (FastAPI, Django) · TypeScript (NestJS, Next.js) · PostgreSQL ·
+Redis · LangGraph · pgvector · AWS · Docker
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/milan-khati/)
