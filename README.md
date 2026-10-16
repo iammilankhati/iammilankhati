@@ -1,8 +1,8 @@
 # Milan Khati
 
-Backend and AI engineer in Kathmandu, Nepal. Open to relocation.
+Senior Software Engineer in Kathmandu, Nepal. 
 
-I build backend services and the LLM features that sit on them: document
+I build end to end software products including LLM features that sit on them: document
 extraction, RAG, and agent workflows, plus the queues, billing, and APIs
 around them. The projects below are products I built and run myself.
 
